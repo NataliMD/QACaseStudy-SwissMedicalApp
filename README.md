@@ -44,10 +44,12 @@ notificar el límite real de la regla de negocio.
 3. Seleccionar la misma categoría con turnos al límite.
 4. Seleccionar un turno libre disponible y presionar "Confirmar".
 5. Observar el mensaje emergente de error obtenido.
+   
 **Resultado Esperado:**
 El sistema debe realizar una validación temprana (bloquear la categoría o advertir 
 con claridad) o, en su defecto, lanzar un mensaje informativo preciso: *"Has 
 alcanzado el límite máximo de 3 turnos activos para esta especialidad."*
+
 **Resultado Actual:**
 Se muestra una alerta que simula una caída del servidor o error técnico temporal, 
 induciendo al usuario a reintentar indefinidamente un flujo bloqueado por diseño.
