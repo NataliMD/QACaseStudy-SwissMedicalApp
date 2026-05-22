@@ -22,7 +22,7 @@ alta frecuencia.
 * **Fecha de Ejecución:** Mayo 2026
 
 ## 📊 Matriz de Casos de Prueba Ejecutados
-Puedes ver la matriz completa en el [Excel de casos de prueba](./documentation/testcase_sm.xlsx)
+Puedes ver la matriz completa en el [Excel de casos de prueba](./Documentation/testcase_sm.xlsx)
 
 ## 🐛 Defectos Críticos Detectados (Bug Report)
 
