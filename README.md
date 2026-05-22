@@ -94,7 +94,7 @@ Haz clic en cada sección para desplegar las capturas de pantalla correspondient
 #### 🤰 Caso 2: Especialidad Ginecología
 
 <details>
-<summary><b>🟢 Ver Evidencias: Caso Exitoso (Hasta 3 turnos activos)</b></summary>
+<summary><b>🟢 Ver Evidencias: Caso Exitoso </b></summary>
 <p>Validación del flujo correcto en una segunda categoría para asegurar la consistencia del sistema.</p>
 
 1. **Paso 1:** Se muestra los turnos activos en la especialidad Ginecología.
