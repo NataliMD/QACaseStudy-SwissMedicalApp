@@ -25,7 +25,7 @@ alta frecuencia.
 Puedes ver la matriz completa en el [Excel de casos de prueba](./documentation/testcase_sm.xlsx)
 
 ## 🐛 Defectos Críticos Detectados (Bug Report)
-Exitoso  ✔️ |
+
 ### Bug #1: Ausencia de Feedback Informativo ante Restricción de Negocio (Límite de 
 Turnos)
 * **Prioridad:** Media | **Severidad:** Media
@@ -36,6 +36,7 @@ aplicación permite visualizar la disponibilidad y avanzar hasta el último paso
 embargo, al confirmar, el sistema falla mostrando un mensaje genérico: *"Ocurrió un 
 error al gestionar el turno. Por favor, intentalo de nuevo más tarde"*, en lugar de 
 notificar el límite real de la regla de negocio.
+
 **Pasos para Reproducir:**
 1. Iniciar sesión con una cuenta que posea 3 turnos activos en una misma categoría 
 (ej: Odontología General).
