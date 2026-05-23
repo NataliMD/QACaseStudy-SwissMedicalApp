@@ -21,8 +21,15 @@ alta frecuencia.
 * **Versiones Evaluadas:** 4.0.59 y 4.0.60
 * **Fecha de Ejecución:** Mayo 2026
 
+
 ## 📊 Matriz de Casos de Prueba Ejecutados
-Puedes ver la matriz completa en el [Excel de casos de prueba](./Documentation/testcase_sm.xlsx)
+
+A continuación, se detalla el diseño y la ejecución de los escenarios clave para validar las reglas de negocio en el módulo de turnos:
+
+| ID | Funcionalidad | Objetivo | Pasos | Resultado esperado | Resultado obtenido | Estado |
+| :--- | :--- | :--- | :--- | :--- | :--- | :---: |
+| **TC-01** | Gestión de turnos | Validar que el sistema permita reservar un turno si el usuario tiene menos del límite máximo (3 turnos activos) en la misma especialidad. | 1) Iniciar sesión con cuenta que posea 2 turnos activos en una misma categoría.<br>2) Ir a "Solicitud de Turnos".<br>3) Seleccionar la misma categoría.<br>4) Elegir un turno disponible y presionar "Confirmar". | El sistema confirma la reserva con éxito y muestra el comprobante del 3º turno activo. | El turno se gestionó correctamente y se visualiza en la agenda. | **Exitoso ✔️** |
+| **TC-02** | Gestión de turnos | Validar el comportamiento del sistema cuando el usuario intenta reservar un 4º turno activo, superando el límite permitido por la regla de negocio. | 1) Iniciar sesión con cuenta que posea 3 turnos activos en una misma categoría.<br>2) Ir a "Solicitud de Turnos".<br>3) Seleccionar la misma categoría.<br>4) Elegir un turno disponible y presionar "Confirmar". | El sistema debe advertir claramente que se alcanzó el límite máximo de 3 turnos para esa especialidad. | Muestra un mensaje genérico: *"Ocurrió un error al gestionar el turno. Por favor, intentalo de nuevo más tarde"*. | **Fallido ❌** |
 
 ## 🐛 Defectos Críticos Detectados (Bug Report)
 
